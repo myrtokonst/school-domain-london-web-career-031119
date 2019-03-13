@@ -23,7 +23,7 @@ end
  def sort 
    roster.collect do |grade, students|
    roster[grade].sort!
-   roster.sort
+   roster
  end
  end
 end 
