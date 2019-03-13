@@ -24,8 +24,5 @@ end
    roster.collect do |grade, students|
    roster[grade].sort
  end
- 
- binding.pry
- puts "dfhbkvj"
  end
 end 
