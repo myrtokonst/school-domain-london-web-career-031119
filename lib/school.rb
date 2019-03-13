@@ -18,4 +18,8 @@ end
  def grade(grade_num)
    return roster[grade_num]
  end
+ 
+ def sort (grade)
+   roster[grade].sort!
+ end
 end 
