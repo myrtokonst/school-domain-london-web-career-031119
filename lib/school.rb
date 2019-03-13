@@ -21,6 +21,7 @@ end
  end
  
  def sort 
+   return 0 if roster.nil?
     roster = roster.map do |grade, students|
       {grade => roster[grade].sort!}
     end
