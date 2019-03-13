@@ -23,7 +23,6 @@ end
  def sort 
     roster.collect do |grade, students|
       {grade => roster[grade].sort!}
-    # roster
     end
     roster = roster.first
     roster.sort_by {|grade, v| grade}
