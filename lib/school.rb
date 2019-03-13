@@ -21,12 +21,6 @@ end
  end
  
  def sort 
-   array = [] 
-    roster.each do |grade, students|
-      array << {grade => roster[grade].sort!}
-    end
-    roster = array
-    # roster = roster.first
-    # roster.sort_by {|grade, v| grade}
+    
  end
 end 
