@@ -21,14 +21,10 @@ end
  end
  
  def sort 
-   
-   
+    roster = roster.map do |grade, students|
+      {grade => roster[grade].sort!}
+    end
+    roster = roster.first
     roster.sort_by {|grade, v| grade}
-    # roster = roster.map do |grade, students|
-    #   {grade => roster[grade].sort!}
-    # end
-    # roster = roster.first
-    # roster.sort_by {|grade, v| grade}
-    # roster.sort_by {|grade, v| grade}
  end
 end 
