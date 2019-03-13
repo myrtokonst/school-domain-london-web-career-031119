@@ -26,6 +26,6 @@ end
     # roster
     end
     roster = roster.first
-    # roster.sort_by {|grade, v| grade}
+    roster.sort_by {|grade, v| grade}
  end
 end 
