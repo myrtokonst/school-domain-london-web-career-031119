@@ -21,7 +21,7 @@ end
  end
  
  def sort 
-    roster.collect! do |grade, students|
+    roster.map! do |grade, students|
       {grade => roster[grade].sort!}
     end
     roster = roster.first
