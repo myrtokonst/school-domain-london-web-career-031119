@@ -21,11 +21,10 @@ end
  end
  
  def sort 
-    roster = roster.collect do |grade, students|
+    roster.collect! do |grade, students|
       {grade => roster[grade].sort!}
     end
-    puts roster
-    # roster = roster.first
-    # roster.sort_by {|grade, v| grade}
+    roster = roster.first
+    roster.sort_by {|grade, v| grade}
  end
 end 
