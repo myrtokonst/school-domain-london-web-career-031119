@@ -21,6 +21,7 @@ end
  end
  
  def sort 
-    
+    # hash 
+  roster.each {|grade, names| names.sort!}
  end
 end 
