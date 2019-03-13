@@ -19,7 +19,8 @@ end
    return roster[grade_num]
  end
  
- def sort (grade_num)
-   roster[grade_num].sort!
+ def sort (school)
+   school.collect do |grade, students|
+   roster[grade].sort
  end
 end 
