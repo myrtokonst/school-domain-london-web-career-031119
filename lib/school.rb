@@ -1,4 +1,5 @@
 # code here!
+require "pry"
 class School 
  attr_accessor :name, :roster 
   
@@ -23,5 +24,6 @@ end
    school.collect do |grade, students|
    roster[grade].sort
  end
+ binding.pry
  end
 end 
