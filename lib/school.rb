@@ -22,8 +22,9 @@ end
  
  def sort 
    return 0 if roster.nil?
-    roster = roster.map do |grade, students|
-      {grade => roster[grade].sort!}
+   array = 
+    roster.map do |grade, students|
+      array << {grade => roster[grade].sort!}
     end
     roster = roster.first
     roster.sort_by {|grade, v| grade}
